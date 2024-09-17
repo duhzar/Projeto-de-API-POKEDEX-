@@ -7,7 +7,7 @@ def get_pokemon_info(pokemon_name):
     
     if response.status_code == 200:
         data = response.json()
-        species_url = data['species']['url']  # URL da espécie do Pokémon
+        species_url = data['species']['url'] 
         return {
             'name': data['name'],
             'id': data['id'],
